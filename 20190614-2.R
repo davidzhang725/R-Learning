@@ -45,3 +45,5 @@ g <- gl(2,50,labels = c("male","female"))
 plot(x,y,type = "n")
 points(x[g=="male"],y[g=="male"],col="green")
 points(x[g=="female"],y[g=="female"],col="red")
+
+xx
