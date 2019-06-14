@@ -29,3 +29,19 @@ with(airquality,{
         mtext("kkkk",outer = TRUE)
 })
 
+
+a <- rnorm(100)
+b <- rnorm(100)
+plot(a,b,pch = 20)
+title("sandiantu")
+legend("topleft",legend = "Data",pch=20)
+fit <- lm(y~x)
+abline(fit,lwd=2)
+
+
+x <- rnorm(100)
+y <- rnorm(100)
+g <- gl(2,50,labels = c("male","female"))
+plot(x,y,type = "n")
+points(x[g=="male"],y[g=="male"],col="green")
+points(x[g=="female"],y[g=="female"],col="red")
